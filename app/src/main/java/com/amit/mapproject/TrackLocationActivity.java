@@ -54,7 +54,7 @@ public class TrackLocationActivity extends FragmentActivity implements OnMapRead
         // Add a marker in Bangalore and move the camera
         currentLocation = new LatLng(12.97, 77.59);
         mMap.addMarker(new MarkerOptions().position(currentLocation).title("Marker in Bangalore"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 15.0f));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 20.0f));
 
 
         if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {

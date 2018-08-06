@@ -80,8 +80,8 @@ public class MarkerActivity extends FragmentActivity implements OnMapReadyCallba
         /*Configure real time updates for location*/
         mLocationRequest = new LocationRequest();
         mLocationCallback = new LocationCallback();
-        mLocationRequest.setInterval(10000);
-        mLocationRequest.setFastestInterval(5000);
+        mLocationRequest.setInterval(20000);
+        mLocationRequest.setFastestInterval(10000);
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
         /*Get the last known location*/
